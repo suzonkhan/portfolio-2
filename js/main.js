@@ -10,6 +10,8 @@ jQuery(document).ready(function () {
         if (selectedSection !== currentActive) {
             $(".page-container section").removeClass("active-section");
             $(".page-container").find("#" + selectedSection).addClass("active-section");
+            $(".menu-area").slideUp();
+            $(".copyright").slideUp();
         }
 
         //selectedSection = $(this).attr("href");
@@ -29,6 +31,11 @@ jQuery(document).ready(function () {
         itemSelector: '.portfolio-item',
         gutter: 30,
         percentPosition: true
+    })
+    $(".mobile-menu-trigger button").on("click", function () {
+        $(".menu-area").slideToggle();
+        $(".copyright").slideToggle();
+        $(this).toggleClass("mobile-menu-activated")
     })
 
 });
