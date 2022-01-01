@@ -1,7 +1,7 @@
 jQuery(document).ready(function () {
     let selectedSection;
-    $(".menu-area-inner ul li").on("click", function () {
-
+    $(".menu-area-inner ul li").on("click", function (e) {
+        e.preventDefault();
         selectedSection = $(this).children("a").attr("href").replace("#", "")
         currentActive = $(".menu-area-inner ul li.active").children("a").attr("href").replace("#", "");
         $(this).addClass("active");
