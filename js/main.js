@@ -49,6 +49,8 @@ jQuery(document).ready(function () {
             $("body").addClass("mobile-view-activated");
         } else {
             $("body").removeClass("mobile-view-activated");
+            $("body .menu-area").slideDown();
+            $("body  .copyright").slideDown();
         }
         // console.log(browserWidth)
     })
