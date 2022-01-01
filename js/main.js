@@ -10,8 +10,8 @@ jQuery(document).ready(function () {
         if (selectedSection !== currentActive) {
             $(".page-container section").removeClass("active-section");
             $(".page-container").find("#" + selectedSection).addClass("active-section");
-            $(".menu-area").slideUp();
-            $(".copyright").slideUp();
+            $("body.mobile-view-activated .menu-area").slideUp();
+            $("body.mobile-view-activated  .copyright").slideUp();
         }
 
         //selectedSection = $(this).attr("href");
@@ -37,5 +37,10 @@ jQuery(document).ready(function () {
         $(".copyright").slideToggle();
         $(this).toggleClass("mobile-menu-activated")
     })
+    let browserWidth = $(window).innerWidth();
+    console.log(browserWidth)
+    if (browserWidth < 1000) {
+        $("body").addClass("mobile-view-activated");
+    }
 
 });
