@@ -21,8 +21,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-$brandColor: #0e6b9f;
+$lightBlue: #60A3D9;
+$brandColor: #0074B7;
+$NavyBlue: #003B73;
 
 a {
   color: $brandColor;
@@ -81,6 +82,18 @@ a {
         text-decoration: none;
         display: block;
         padding: 10px 0;
+        color: inherit;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        transition: 0.5s;
+        &:hover{
+          color: $brandColor;
+        }
+      }
+      &.active{
+        a{
+          color: $brandColor;
+        }
       }
     }
   }
@@ -139,7 +152,7 @@ section {
     margin: 0;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: 0.2s;
-    border: 10px solid #f5ebd8;
+    border: 10px solid #e5f2ff;
   }
 }
 
@@ -159,14 +172,15 @@ section {
         margin: 5px 20px 5px 0;
         text-align: center;
         line-height: 20px;
-        //color: $brandColor;
+        color: inherit;
         //width: 36px;
-        transition: 0.8s;
+        transition: 0.4s;
         border-radius: 50px;
 
         &:hover {
           //background-color: $brandColor;
-          color: #252525;
+          color: $brandColor;
+          transform: translateY(-5px);
         }
       }
     }

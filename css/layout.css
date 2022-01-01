@@ -23,7 +23,7 @@ img {
 }
 
 a {
-  color: #0e6b9f;
+  color: #0074B7;
 }
 
 .row {
@@ -68,6 +68,16 @@ a {
   text-decoration: none;
   display: block;
   padding: 10px 0;
+  color: inherit;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.menu-area-inner ul li a:hover {
+  color: #0074B7;
+}
+.menu-area-inner ul li.active a {
+  color: #0074B7;
 }
 
 section.page-section {
@@ -115,7 +125,7 @@ section#home {
   margin: 0;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transition: 0.2s;
-  border: 10px solid #f5ebd8;
+  border: 10px solid #e5f2ff;
 }
 
 .social-media ul {
@@ -132,11 +142,13 @@ section#home {
   margin: 5px 20px 5px 0;
   text-align: center;
   line-height: 20px;
-  transition: 0.8s;
+  color: inherit;
+  transition: 0.4s;
   border-radius: 50px;
 }
 .social-media ul li a:hover {
-  color: #252525;
+  color: #0074B7;
+  transform: translateY(-5px);
 }
 
 .profile-intro h1 {
