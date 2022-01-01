@@ -176,6 +176,11 @@ ul.skill-list li {
   background-color: #ffffff;
   margin-bottom: 4px;
   border-radius: 4px;
+  transition: 0.4s;
+}
+ul.skill-list li:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 ul.education-list {
@@ -200,6 +205,10 @@ ul.education-list li {
   padding: 5px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+  transition: 0.4s;
+}
+.portfolio-wrapper .portfolio-item-inner:hover {
+  transform: translateY(-5px);
 }
 
 .blog-wrapper {
@@ -211,10 +220,36 @@ ul.education-list li {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   margin-bottom: 30px;
+  transition: 0.4s;
+}
+.blog-wrapper > div.blog-item:hover {
+  transform: translateY(-5px);
 }
 .blog-wrapper .blog-info h3 {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.experience-card {
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+.experience-card img {
+  max-height: 40px;
+  margin-bottom: 10px;
+}
+.experience-card h4 {
+  margin-bottom: 10px;
+}
+.experience-card h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+.experience-card p {
+  margin-bottom: 5px;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
 }
 
 /*# sourceMappingURL=layout.css.map */
