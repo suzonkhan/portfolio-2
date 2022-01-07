@@ -217,7 +217,7 @@ a {
   background-color: #fff;
   padding: 50px;
   border: 1px solid #ebebeb;
-  margin-top: 50px;
+  margin: 50px 0;
   border-radius: 10px;
   display: none;
 }
@@ -299,6 +299,10 @@ ul.education-list li {
   max-height: 40px;
   margin-bottom: 10px;
 }
+.experience-card i {
+  margin-bottom: 30px;
+  color: #e12973;
+}
 .experience-card h4 {
   margin-bottom: 10px;
 }
@@ -311,6 +315,25 @@ ul.education-list li {
 }
 .experience-card:hover {
   transform: translateY(-5px);
+}
+
+.service-box {
+  margin-bottom: 40px;
+}
+.service-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.service-box h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+.service-box i {
+  margin-bottom: 20px;
+  color: #e12973;
+}
+.service-box p {
+  margin-bottom: 5px;
 }
 
 .mobile-menu-trigger {

@@ -39,7 +39,7 @@ a {
   //background-size: cover;
   //background-position: 50% 50%;
   //background-repeat: no-repeat;
-  .particles-js-canvas-el{
+  .particles-js-canvas-el {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -47,7 +47,8 @@ a {
     right: 0;
     //z-index: -1;
   }
-  .container{
+
+  .container {
     position: relative;
     z-index: 1;
   }
@@ -116,6 +117,7 @@ a {
               border-radius: 4px;
               transition: 0.5s;
               color: #9f9f9f;
+
               &:hover {
                 background: linear-gradient(45deg, #fa5252, #e12973);
                 color: #ffffff;
@@ -264,7 +266,7 @@ a {
   background-color: #fff;
   padding: 50px;
   border: 1px solid #ebebeb;
-  margin-top: 50px;
+  margin: 50px 0;
   border-radius: 10px;
   display: none;
 
@@ -362,6 +364,11 @@ ul.education-list {
     margin-bottom: 10px;
   }
 
+  i {
+    margin-bottom: 30px;
+    color: $brandColor;
+  }
+
   h4 {
     margin-bottom: 10px;
 
@@ -377,6 +384,28 @@ ul.education-list {
 
   &:hover {
     transform: translateY(-5px);
+  }
+}
+
+.service-box {
+  margin-bottom: 40px;
+  h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  i {
+    margin-bottom: 20px;
+    color: $brandColor;
+  }
+
+  p {
+    margin-bottom: 5px;
   }
 }
 
