@@ -213,6 +213,16 @@ a {
   padding-left: 20px;
 }
 
+@keyframes BottomtoTop {
+  from {
+    transform: translateY(500px);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .page-section {
   background-color: #fff;
   padding: 50px;
@@ -223,6 +233,7 @@ a {
 }
 .page-section.active-section {
   display: block;
+  animation: BottomtoTop 1s;
 }
 
 ul.skill-list {
