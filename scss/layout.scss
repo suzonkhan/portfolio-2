@@ -34,11 +34,7 @@ a {
   padding-top: 200px;
   width: 100%;
   height: 100%;
-  //background-color: #b61924;
-  //background-image: url('');
-  //background-size: cover;
-  //background-position: 50% 50%;
-  //background-repeat: no-repeat;
+
   .particles-js-canvas-el {
     position: fixed;
     top: 0;
@@ -48,7 +44,11 @@ a {
     //z-index: -1;
   }
 
-  .container {
+  .page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1320px;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
   }
@@ -258,7 +258,7 @@ a {
 }
 
 
-.page-container {
+.page-content {
   padding-left: 20px;
 }
 
@@ -267,7 +267,7 @@ a {
     transform: translateY(500px);
     opacity: 0.2;
   }
-  to{
+  to {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -481,6 +481,80 @@ ul.education-list {
           transition-delay: 0s, 0.3s;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .page-container {
+    width: 98%;
+    //word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .page-content {
+    padding-left: 0;
+  }
+  .sidebar .sidebar-inner > div {
+    padding: 20px;
+  }
+  .page-section {
+    padding: 20px 5px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .short-contact {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .sidebar .sidebar-inner > div {
+    padding: 10px 15px;
+  }
+  .main-navigation {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .download-cv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding-top: 120px;
+  }
+  .social-media {
+    display: none;
+  }
+  .short-contact {
+    display: none;
+  }
+  .profile-info {
+    padding-bottom: 30px !important;
+  }
+  .main-navigation ul {
+    text-align: center;
+  }
+  .profile-picture {
+    width: 150px !important;
+  }
+  .sidebar-inner {
+    padding-top: 75px !important;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .main-navigation ul li {
+    width: calc(50% - 10px);
+
+    a {
+      width: 100%;
     }
   }
 }
