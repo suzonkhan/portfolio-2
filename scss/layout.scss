@@ -24,6 +24,8 @@ img {
 
 $lightBlue: #60A3D9;
 $brandColor: #e12973;
+//$brandColor: #ffac0c;
+$brandSecondaryColor: #fa5252;
 $NavyBlue: #003B73;
 
 a {
@@ -119,7 +121,7 @@ a {
               color: #9f9f9f;
 
               &:hover {
-                background: linear-gradient(45deg, #fa5252, #e12973);
+                background: linear-gradient(45deg, $brandSecondaryColor, $brandColor);
                 color: #ffffff;
               }
             }
