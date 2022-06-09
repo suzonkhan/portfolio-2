@@ -152,7 +152,8 @@ a {
   color: #e12973;
   transform: translateY(-5px);
 }
-.sidebar .sidebar-inner > div.download-cv a {
+
+.download-cv a {
   display: table;
   text-align: center;
   margin: 10px auto;
@@ -163,7 +164,7 @@ a {
   border-radius: 4px;
   font-weight: 500;
 }
-.sidebar .sidebar-inner > div.download-cv a i {
+.download-cv a i {
   margin-right: 8px;
 }
 

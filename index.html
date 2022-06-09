@@ -91,8 +91,9 @@
                             </ul>
                         </div>
                         <div class="download-cv">
-                            <a class="" target="_blank" href="images/Abdur-Rahman-Suzon-Resume.pdf"> <i class="fa fa-download"></i>
-                                Download CV</a>
+                            <a class="" target="_blank" href="images/Abdur-Rahman-Suzon-Resume.pdf"> <i
+                                    class="fa fa-download"></i>
+                                Download Resume</a>
                         </div>
                     </div>
                     <!--sidebar-->
@@ -137,9 +138,11 @@
                                     <h2 class="mb-3">About Me</h2>
                                     <p>
                                         I am a Frontend and WordPress Theme Developer. Working this field since
-                                        2011. First of all, I am an award winner Frontend Developer and expert on UI/UX. 100% pixel
+                                        2011. First of all, I am an award winner Frontend Developer and expert on UI/UX.
+                                        100% pixel
                                         perfect HTML/CSS conversions and cross browser combative job is a common task
-                                        for me. On the other hand, I have been developing WordPress Theme since 2013. I love WordPress
+                                        for me. On the other hand, I have been developing WordPress Theme since 2013. I
+                                        love WordPress
                                         and I am very good at this.
                                     </p>
                                 </div> <!--col-->
@@ -188,7 +191,7 @@
                                         <i class="fas fa-chart-line fa-2x"></i>
                                         <h4>Digital Marketing & SEO</h4>
                                         <p> Doing digital marketing & SEO for my personal business and for my nearest
-                                            client. SEO skill helps to create optimize website for all.   </p>
+                                            client. SEO skill helps to create optimize website for all. </p>
 
 
                                     </div>
@@ -201,12 +204,12 @@
                     <section id="resume" class="page-section">
                         <div class="container-lg">
 
-<!--                            <div class="row my-5">-->
-<!--                                <div class="col-md-12">-->
-<!--                                    <h3 class="mb-3">Resume</h3>-->
+                            <!--                            <div class="row my-5">-->
+                            <!--                                <div class="col-md-12">-->
+                            <!--                                    <h3 class="mb-3">Resume</h3>-->
 
-<!--                                </div> -->
-<!--                            </div>-->
+                            <!--                                </div> -->
+                            <!--                            </div>-->
 
                             <div class="row my-4">
                                 <div class="col-md-12">
@@ -341,6 +344,17 @@
                                 </div> <!--col-->
                             </div>
                             <!--row-->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="download-cv">
+                                        <a class="" target="_blank" href="images/Abdur-Rahman-Suzon-Resume.pdf"> <i
+                                                class="fa fa-download"></i>
+                                            Download Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--row-->
+
                         </div>
                     </section>
                     <section id="portfolio" class="page-section">
@@ -472,32 +486,33 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <form action="">
+                                    <form id="contact-form" action="https://formspree.io/f/xeqndgra"
+                                          method="POST">
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label for="">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="name" class="form-control" required>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <label for="">Mobile</label>
-                                                <input type="text" class="form-control">
+                                                <label for="">Email</label>
+                                                <input type="email" name="email" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
                                                 <label for="">Phone</label>
-                                                <input type="text" class="form-control">
+                                                <input type="tel" name="mobile" class="form-control" required>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="">Subject</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="subject" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 mb-3">
                                                 <label for="">Message</label>
-                                                <textarea class="form-control" name="" id="" cols="6"
-                                                          rows="4"></textarea>
+                                                <textarea class="form-control" name="message" id="" cols="6"
+                                                          rows="4" required></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -505,6 +520,7 @@
                                                 <input type="submit" value="Submit" class="btn btn-secondary w-100">
                                             </div>
                                         </div>
+                                        <p id="my-form-status"></p>
                                     </form>
                                 </div>
                             </div>
@@ -514,8 +530,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 <!--wrapper-->
 <script src="js/jquery.min.js"></script>
