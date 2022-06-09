@@ -71,7 +71,7 @@ jQuery(document).ready(function () {
             }
         }).then(response => {
             if (response.ok) {
-                status.innerHTML = "Thanks for your submission!";
+                status.innerHTML = "Thanks for contact with me. Will respond as soon as possible.";
                 form.reset()
             } else {
                 response.json().then(data => {
