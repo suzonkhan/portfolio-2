@@ -86,5 +86,19 @@ jQuery(document).ready(function () {
             status.innerHTML = "Oops! There was a problem submitting your form"
         });
     }
+
     form.addEventListener("submit", handleSubmit)
+
+
+    $('.btn-details').on('click', function () {
+        const projectContent = $(this).parents(".portfolio-item-inner").html();
+
+        console.log(projectContent);
+
+        $('body').addClass("project-popup-activated");
+        $('.project-popup-content').html(projectContent);
+    })
+    $('.close-project-popup').on('click', function () {
+        $('body').removeClass("project-popup-activated");
+    })
 });
