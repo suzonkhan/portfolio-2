@@ -1,9 +1,10 @@
 jQuery(document).ready(function () {
+    "use strict"
     let selectedSection;
     $(".menu-area-inner ul li").on("click", function (e) {
         e.preventDefault();
         selectedSection = $(this).children("a").attr("href").replace("#", "")
-        currentActive = $(".menu-area-inner ul li.active").children("a").attr("href").replace("#", "");
+        let currentActive = $(".menu-area-inner ul li.active").children("a").attr("href").replace("#", "");
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
 
@@ -23,7 +24,6 @@ jQuery(document).ready(function () {
                 })
             }, 1000)
         }
-
     })
     $('.portfolio-wrapper').masonry({
         itemSelector: '.portfolio-item',
